@@ -17,7 +17,13 @@ const useStyles = makeStyles((theme) => ({
 
 export default function SimpleSelect(props) {
 
-    const {name, callback, activeQuery, options } = props;
+    const {
+        name,
+        callback,
+        activeQuery,
+        options
+    } = props;
+
     const classes = useStyles();
 
     return (
@@ -35,8 +41,12 @@ export default function SimpleSelect(props) {
                         <em>{name === 'Rover'? 'None': 'All'}</em>
                     </MenuItem>
                     {
-                        options.map(option=>
-                            <MenuItem value={option.toLocaleLowerCase()}>{option}</MenuItem>
+                        options.map((option, index)=>
+                            <MenuItem
+                                value={option.toLocaleLowerCase()}
+                                key={index}
+                            >
+                                {option}</MenuItem>
                         )
                     }
                 </Select>

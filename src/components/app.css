@@ -1,5 +1,14 @@
-.App {
+html, body {
+  height: 100%;
+}
 
+#root {
+  height: 100%;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .App-logo {
@@ -29,7 +38,7 @@
 }
 
 header {
-  height: 100px;
+  min-height: 100px;
   background-color: #282c34;
 }
 .container-menu {
@@ -37,18 +46,28 @@ header {
   justify-content: center;
 }
 
+main {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 menu {
   display: flex;
   justify-content: center;
-}
-.rover-image {
-  width: 100px;
-  height: 100px;
-  border-radius: 3px;
+  align-items: center;
 }
 
 .content-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+footer {
+  margin-top: 20px;
+  height: 50px;
+  background-color: #282c34;
+  flex-shrink: 0;
 }

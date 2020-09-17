@@ -1,43 +1,60 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardContent from '@material-ui/core/CardContent';
+import CardHeader from '@material-ui/core/CardHeader';
 import CardMedia from '@material-ui/core/CardMedia';
+import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
+import { Link } from '@material-ui/core';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
     root: {
-        maxWidth: 400,
-        marginLeft: 20,
-        marginTop: 20
+        minWidth: 400,
+        margin: '0 0 20px 20px'
     },
     media: {
-        height: 140,
+        height: 0,
+        paddingTop: '56.25%', // 16:9
     },
-});
+    expand: {
+        transform: 'rotate(0deg)',
+        marginLeft: 'auto',
+        transition: theme.transitions.create('transform', {
+            duration: theme.transitions.duration.shortest,
+        }),
+    },
 
-export default function MediaCard({imageSrc, cameraName}) {
+}));
+
+export default function CardStyled( props ) {
+    const {
+        imageSrc,
+        cameraName,
+        earthDate
+    } = props;
+
     const classes = useStyles();
-
     return (
         <Card className={classes.root}>
-            <CardActionArea>
-                <CardMedia
-                    className={classes.media}
-                    image={imageSrc}
-                    title="Contemplative Reptile"
-                />
-                <CardContent>
-                    <Typography gutterBottom variant="h6" component="h3">
-                        {cameraName}
-                    </Typography>
-                    <Typography variant="body3" color="textSecondary" component="p">
-                        Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                        across all continents except Antarctica
-                    </Typography>
-                </CardContent>
-            </CardActionArea>
+            <CardHeader
+                title={cameraName}
+                subheader={earthDate}
+            />
+            <CardMedia
+                className={classes.media}
+                image={imageSrc}
+                title="Paella dish"
+            />
+            <CardContent>
+                <Typography variant="body2" color="textSecondary" component="p">
+                    Full size photo follow the <Link href={imageSrc}
+                                                     target="_blank"
+                >
+                    link</Link>
+                </Typography>
+            </CardContent>
+
         </Card>
     );
 }
+
