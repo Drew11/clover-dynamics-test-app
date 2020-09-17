@@ -135,6 +135,9 @@ const App = () => {
             </div>
 
             <main>
+
+                {photos && photos.length===0&& 'no photo in this day...'}
+
                 <div className="content-container">
                     {
                         photos ? getCardsPerLoad().map(photo =>
