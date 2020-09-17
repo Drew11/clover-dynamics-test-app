@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "75a667136eb1883464f070bf6d8d3d52",
+    "revision": "129586456a1d10fb812b690bd853658e",
     "url": "/clover-dynamics-test-app/index.html"
   },
   {
-    "revision": "214b4bb2472694072a4f",
+    "revision": "46c4daf3a8b92fe1904f",
     "url": "/clover-dynamics-test-app/static/css/main.00633897.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/clover-dynamics-test-app/static/js/2.1202034e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "214b4bb2472694072a4f",
-    "url": "/clover-dynamics-test-app/static/js/main.4cf0b2c9.chunk.js"
+    "revision": "46c4daf3a8b92fe1904f",
+    "url": "/clover-dynamics-test-app/static/js/main.2ee0a9a6.chunk.js"
   },
   {
     "revision": "2e549b638ec079122e05",
