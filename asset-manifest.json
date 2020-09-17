@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/clover-dynamics-test-app/static/css/main.ba12d39a.chunk.css",
+    "main.js": "/clover-dynamics-test-app/static/js/main.e804dd47.chunk.js",
+    "main.js.map": "/clover-dynamics-test-app/static/js/main.e804dd47.chunk.js.map",
+    "runtime-main.js": "/clover-dynamics-test-app/static/js/runtime-main.70fefbd6.js",
+    "runtime-main.js.map": "/clover-dynamics-test-app/static/js/runtime-main.70fefbd6.js.map",
+    "static/js/2.056a7cf5.chunk.js": "/clover-dynamics-test-app/static/js/2.056a7cf5.chunk.js",
+    "static/js/2.056a7cf5.chunk.js.map": "/clover-dynamics-test-app/static/js/2.056a7cf5.chunk.js.map",
+    "index.html": "/clover-dynamics-test-app/index.html",
+    "precache-manifest.07c89c792db54272f8063a44233ba1f3.js": "/clover-dynamics-test-app/precache-manifest.07c89c792db54272f8063a44233ba1f3.js",
+    "service-worker.js": "/clover-dynamics-test-app/service-worker.js",
+    "static/css/main.ba12d39a.chunk.css.map": "/clover-dynamics-test-app/static/css/main.ba12d39a.chunk.css.map",
+    "static/js/2.056a7cf5.chunk.js.LICENSE.txt": "/clover-dynamics-test-app/static/js/2.056a7cf5.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.70fefbd6.js",
+    "static/js/2.056a7cf5.chunk.js",
+    "static/css/main.ba12d39a.chunk.css",
+    "static/js/main.e804dd47.chunk.js"
+  ]
+}
